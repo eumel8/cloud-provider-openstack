@@ -24,7 +24,7 @@ spec:
       labels:
         {{- include "cinder-csi.snapshot-controller.labels" . | nindent 8 }}
     spec:
-      serviceAccount: snapshot-controller-sa
+      serviceAccount: snapshot-controller
       containers:
         - name: snapshot-controller
           image: "{{ .Values.csi.snapshotController.image.repository }}:{{ .Values.csi.snapshotController.image.tag }}"

@@ -51,7 +51,7 @@ metadata:
   name: snapshot-controller-role
 subjects:
   - kind: ServiceAccount
-    name: snapshot-controller-sa
+    name: snapshot-controller
     namespace: {{ .Release.Namespace }}
 roleRef:
   kind: ClusterRole
